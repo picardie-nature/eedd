@@ -1,0 +1,260 @@
+/**
+ * Feuille de style maître
+ *
+ */
+
+p,li,h1,h2,h3 {
+	margin:0px;
+	margin-left: 14px;
+	font-family: Verdana;
+	font-size: 1em;
+	text-decoration: none;
+	color: black;
+}
+
+h1 { font-size: 1.6em; margin-top: 10px; }
+h2 { font-size: 1.4em; margin-top: 10px; }
+h3 { font-size: 1.2em; margin-top: 10px; }
+
+p.titre {
+	font-size:0.9em;
+}
+
+p.lieu {
+	margin-top: 4px;
+}
+
+p.pdate {
+	font-weight: bold;
+	font-size:0.8em;
+	margin-top: 2px;
+}
+
+p.ville {
+	font-size: 0.8em;
+	font-variant: small-caps;
+	color: #222;
+}
+p.dept {
+	font-size: 0.6em;
+	font-variant: small-caps;
+	color: #444;
+}
+
+p.horaire {
+	margin-top: 12px;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+#top {
+	background-image:url('../../customisation/images/logo_horizon.jpg');
+	width: 1000px;
+	height:370px;
+	margin:auto;
+}
+/* entetes rubriques */
+#top2 {
+	width: 1000px;
+	height:370px;
+	margin:auto;
+}
+
+.top_rub_1 {
+	background-image: url('../../customisation/images/r1.jpg');
+}
+.top_rub_2 {
+	background-image: url('../../customisation/images/r2.jpg');
+}
+.top_rub_3 {
+	background-image: url('../../customisation/images/r3.jpg');
+}
+.top_rub_4 {
+	background-image: url('../../customisation/images/r4.jpg');
+}
+
+#conteneur {
+	width: 1000px;
+	margin:auto;
+}
+
+#dates_vertical {
+	float:left;
+	width: 250px;
+	min-height:500px;
+}
+
+#zone_principal {
+	margin-left: 250px;
+	min-height: 800px;
+	font-family: verdana;
+}
+
+#dates,#bloc1,#bloc2 {
+	width: 1000px;
+	margin:auto;
+}
+
+#dates {
+	padding-left: 30px;
+}
+#bloc1 {
+	text-align: center;
+	margin-top: 20px;
+}
+#bloc2 {
+	background-image:url('images/logo2.jpg');
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.date {
+	padding-top: 15px;
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin:20px;
+	box-shadow: 12px 12px 12px rgb(9,25,19);
+}
+
+.date a {
+	text-decoration: none;
+	color: blue;
+}
+
+.inscription a:hover {
+	text-decoration: underline;
+	color:blue;
+}
+
+h1 {
+	margin-left: 0px;
+}
+.titre_r1 {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(248,233,56);
+	border-bottom-width: 4px;
+}
+
+.titre_r2 {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(242,143,62);
+	border-bottom-width: 4px;
+}
+
+.titre_r3 {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(109,180,78);
+	border-bottom-width: 4px;
+}
+
+.titre_r4 {
+	border-bottom-style: solid;
+	border-bottom-color: rgb(0,157,224);
+	border-bottom-width: 4px;
+}
+
+.aisne, .rub2 {
+	background-color:rgb(242,143,62);
+}
+
+.oise, .rub3  {
+	background-color:rgb(109,180,78);
+}
+
+.somme, .rub4 {
+	background-color:rgb(0,157,224);
+}
+
+.region, .rub1 {
+	background-color:rgb(248,233,56);
+}
+
+.inscription {
+	text-align: right;
+	margin: 10px;
+}
+.inscription a {
+	background-color: white;
+	opacity: 0.6;
+	padding: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+/* ancien bouton inscription
+.btn {
+	background-color:rgb(109,180,78);
+	font-family: Verdana;
+	font-size: 1.2em;
+	box-shadow: 12px 12px 12px black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.btn a {
+	color: blue;
+
+}
+*/
+#bande_logos {
+	text-align:center;
+	clear:both;
+}
+#bande_logos img {
+	border: 0px;
+}
+
+#bande_logos a {
+	text-decoration: none;
+	padding: 30px;
+}
+
+.forum {
+	margin-left: 20px;
+	border-left-style: solid;
+	border-left-size: 1px;
+	margin-bottom: 10px;
+	background-repeat: repeat-y;
+}
+
+.forum_r1 { background-image: url('../../customisation/images/p_r1.gif'); }
+.forum_r2 { background-image: url('../../customisation/images/p_r2.gif'); }
+.forum_r3 { background-image: url('../../customisation/images/p_r3.gif'); }
+.forum_r4 { background-image: url('../../customisation/images/p_r4.gif'); }
+
+.forum_ff {
+	display: none;
+}
+.forum_ff p, .forum_ff ul, .forum_ff li {
+	color: white;
+}
+label {
+	color: white;
+}
+
+legend {
+	background-color: rgb(9,25,19);
+}
+	
+fieldset {
+	margin: 40px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding: 4px;
+	background-color: rgb(9,25,19);
+	color: white;
+}
+
+.boutons {
+	text-align: right;
+}
+
+input.text, textarea {
+	color: black;
+}
+
+.erreur_message {
+	color: red;
+}

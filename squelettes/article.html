@@ -1,0 +1,27 @@
+<BOUCLE_principale(ARTICLES) {id_article}>
+<INCLURE{fond=entete, id_rubrique}>
+<div id="conteneur">
+	<div id="dates_vertical">
+		<BOUCLE_rubriques_p(RUBRIQUES){id_rubrique!=#ID_RUBRIQUE}{par num titre}>
+			#TEXTE
+		</BOUCLE_rubriques_p>
+	</div>
+	<div id="zone_principal">
+		<h1>#TITRE</h1>
+		<BOUCLE_articles(ARTICLES){id_article}>
+			#TITRE<br>
+			#TEXTE
+			<BOUCLE_forum_art(FORUMS){id_article}>
+				<div class="forum forum_r#ID_RUBRIQUE">
+					<p>#TITRE</p>
+					<p><small>le [(#DATE|affdate)] par #NOM</small></p>
+					<p>#TEXTE</p>
+				</div>
+			</BOUCLE_forum_art>
+			<a href="javascript:;" class="forum_ff_a" show="ff_root_#ID_ARTICLE"><img src="customisation/images/b_reagir_r#ID_RUBRIQUE.gif" alt="réagir"></a>
+			<div id="ff_root_#ID_ARTICLE" class="forum_ff">#FORMULAIRE_FORUM</div>
+		</BOUCLE_articles>
+	</div>
+</div>
+<INCLURE{fond=pied}>
+</BOUCLE_principale>

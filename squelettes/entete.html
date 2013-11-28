@@ -1,0 +1,17 @@
+<html>
+<head>
+	<INCLURE{fond=inclure/head}>
+</head>
+<body>
+<a href="spip.php"><div id="top2" class="top_rub_#ID_RUBRIQUE"></div></a>
+<script>
+function my_toggle(elem) {
+	var div = $(elem).attr('show');
+	$("\#"+div).show('slide');
+}
+
+$(document).ready(function () {
+	$('.forum_ff_a').click(function (e) { my_toggle(this); });
+}
+);
+</script>
